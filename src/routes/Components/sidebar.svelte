@@ -88,7 +88,7 @@
   <div
     role="button"
     aria-label="Toggle"
-    class={`bg-purple h-screen p-5 pt-8 ${open ? 'w-72' : 'w-20'} duration-300 relative`}
+    class={`bg-purple h-screen p-5 pt-8 ${open ? 'w-72' : 'w-20'} duration-400 relative`}
     on:click={toggleOpen}
     on:keydown={handleKeydown}
     tabindex="0"
@@ -133,7 +133,7 @@
     <!-- svelte-ignore a11y-no-static-element-interactions -->
 
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-    <ul class="pt-2" on:click|stopPropagation>
+    <ul class="pt-2">
       {#each filteredData as menu (menu.id)}
         <li
           class="text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-500 rounded-md mt-2"
