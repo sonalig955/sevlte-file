@@ -135,20 +135,23 @@
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <ul class="pt-2">
       {#each filteredData as menu (menu.id)}
-        <li
-          class="text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-500 rounded-md mt-2"
-        >
-          <span class="text-2xl block float-left">&#128203;</span>
-          <a
+      <span class="text-2xl block float-left">&#128203;</span>
+      <a
             href={menu.link}
             class={`text-base font-medium flex-1 duration-200 ${!open && 'hidden'}`}
           >
+        <li
+          class="text-gray-300 text-sm items-center gap-x-4 cursor-pointer p-2 hover:bg-gray-500 rounded-md mt-2"
+        >
+          
+          
             {menu.title}
-          </a>
+          
           <p class={`text-base font-medium duration-200 ${!open && 'hidden'}`}>
             {menu.description}
           </p>
         </li>
+        </a>
       {/each}
     </ul>
 
